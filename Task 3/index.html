@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Music Player</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="player">
+    <div class="details">
+      <h2 id="title" style="text-decoration: underline;">Song Title</h2>
+      <h3 id="artist" style="text-decoration: underline;">Artist</h3>
+    </div>
+    <audio id="audio"></audio>
+    <div class="controls">
+      <button id="prev">⏮</button>
+      <button id="play">▶️</button>
+      <button id="next">⏭</button>
+    </div>
+    <div class="progress-container">
+      <span id="current-time">0:00</span>
+      <input type="range" id="progress" value="0">
+      <span id="duration">0:00</span>
+    </div>
+      <h5 style="text-decoration: underline;">volume controler</h5>
+   <input type="range" id="volume" min="0" max="1" step="0.01" value="1" />
+    <div class="playlist" id="playlist"></div>
+  </div>
+     <div class="copyright" style="text-decoration: underline;">Mukul design &copy; 2025</div>
+  <script src="script.js"></script>
+</body>
+</html>
